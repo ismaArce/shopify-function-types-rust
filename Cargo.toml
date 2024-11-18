@@ -1,0 +1,19 @@
+[package]
+name = "shopify_types_mini"
+version = "0.0.1"
+authors = ["Ismael Arce <ismael.arce@shopstack.io>"]
+description = "A macro for generating shopify types (shopify functions context) by using miniserde instead of serde."
+keywords = ["template", "proc_macro", "procmacro"]
+edition = "2018"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+quote = "1"
+proc-macro2 = "1.0"
+syn = "1.0"
+miniserde = "0.1"
+heck = "0.5.0"
+graphql-parser = "0.4"
+
